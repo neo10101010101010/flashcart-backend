@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- =============================================== -->
+    <!-- 1. CONSOLA (con colores)                        -->
+    <!-- =============================================== -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %highlight(%-5level) [%thread] %cyan(%logger{36}) - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- =============================================== -->
+    <!-- 2. ARCHIVO ROTATORIO (logs diarios)             -->
+    <!-- =============================================== -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/flashcart.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/flashcart.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory> <!-- Guarda 30 días -->
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- =============================================== -->
+    <!-- 3. LOGS PARA NUESTRO PAQUETE                    -->
+    <!-- =============================================== -->
+    <logger name="com.flashcart.flashcart_backend" level="DEBUG" additivity="false">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+    </logger>
+
+    <!-- =============================================== -->
+    <!-- 4. LOGS DE SPRING (menos verbose)              -->
+    <!-- =============================================== -->
+    <logger name="org.springframework" level="INFO"/>
+    <logger name="org.springframework.web" level="INFO"/>
+    <logger name="org.hibernate.SQL" level="DEBUG"/> <!-- Opcional: muestra queries SQL -->
+
+    <!-- =============================================== -->
+    <!-- 5. ROOT LOGGER (nivel por defecto)             -->
+    <!-- =============================================== -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+    </root>
+
+</configuration>
