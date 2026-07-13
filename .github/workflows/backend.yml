@@ -1,0 +1,31 @@
+name: Backend CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-test-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configurar Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '19'
+
+      - name: Dar permisos al Maven Wrapper
+        run: chmod +x mvnw
+
+      - name: Ejecutar pruebas
+        run: ./mvnw clean verify
+
+      - name: Desplegar en Render
+        if: success()
+        run: curl "$RENDER_DEPLOY_HOOK"
+        env:
+          RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
