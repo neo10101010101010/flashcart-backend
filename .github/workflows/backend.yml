@@ -30,6 +30,12 @@ jobs:
           JWT_SECRET: ${{ secrets.JWT_SECRET }}
           JWT_EXPIRATION: ${{ secrets.JWT_EXPIRATION }}
 
+      - name: Subir analisis de cobertura JaCoCo
+        uses: actions/upload-artifact@v4
+        with:
+          name: jacoco-report
+          path: target/site/jacoco
+
       - name: Desplegar en Render
         if: success()
         run: curl "$RENDER_DEPLOY_HOOK"
