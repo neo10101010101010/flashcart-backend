@@ -10,6 +10,13 @@ import java.util.UUID;
 
 @Repository
 public interface CarritoItemRepository extends JpaRepository<CarritoItems, Long> {
+    /**
+     * Obtiene todos los productos asociados a un carrito específico.
+     */
     List<CarritoItems> findByCarritoId(Long carritoId);
+    /**
+     * Busca un producto dentro de un carrito mediante el ID del carrito
+     * y el ID del producto.
+     */
     Optional<CarritoItems> findByCarritoIdAndProductoId(Long carritoId, UUID productoId);
 }

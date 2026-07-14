@@ -16,7 +16,13 @@ public class Carrito {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    // Relación MUCHOS a UNO con Usuario (carga perezosa)
+    /**
+     * Relación Muchos a Uno entre Carrito y Usuario.
+     * Cada carrito pertenece a un único usuario, mientras que un usuario
+     * puede tener uno o varios carritos a lo largo del tiempo.
+     * Se utiliza FetchType.LAZY para cargar la información del usuario
+     * únicamente cuando sea necesaria, optimizando el rendimiento de la aplicación.
+     */
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "usuario_id", nullable = false)
     private Usuario usuario;
@@ -33,6 +39,19 @@ public class Carrito {
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
 
+    /**
+     * Relación Uno a Muchos entre Carrito y CarritoItems.
+     * Un carrito puede contener múltiples productos representados por
+     * la entidad CarritoItems.
+     * - mappedBy indica que la relación es administrada por la propiedad
+     *   "carrito" de CarritoItems.
+     * - CascadeType.ALL propaga las operaciones (crear, actualizar y eliminar)
+     *   a los elementos del carrito.
+     * - orphanRemoval elimina automáticamente los elementos que dejan de
+     *   pertenecer al carrito.
+     * - FetchType.LAZY carga los productos únicamente cuando son solicitados,
+     *   mejorando el rendimiento.
+     */
     @OneToMany(mappedBy = "carrito", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private List<CarritoItems> items = new ArrayList<>();
 

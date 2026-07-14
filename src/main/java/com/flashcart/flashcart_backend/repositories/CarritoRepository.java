@@ -9,5 +9,9 @@ import java.util.Optional;
 
 @Repository
 public interface CarritoRepository extends JpaRepository<Carrito, Long> {
+    /**
+     * Busca el carrito de un usuario según su estado
+     * (por ejemplo, ACTIVO o PROCESADO).
+     */
     Optional<Carrito> findByUsuarioIdAndEstado(Long usuarioId, EstadoCarrito estado);
 }

@@ -1,59 +1,91 @@
 # FlashCart Backend API
 
-## 1. Descripción
+Backend REST desarrollado con **Spring Boot** para una plataforma de comercio electrónico.
 
-FlashCart Backend es una API REST desarrollada con Spring Boot para la gestión de usuarios, autenticación, 
-productos y carrito de compras.
-
-### Tecnologías
-
-- Java 17
-- Spring Boot
-- Spring Security + JWT
-- Spring Data JPA
-- PostgreSQL (Supabase)
-- Swagger / OpenAPI
-- Maven
+Implementa autenticación mediante JWT, gestión de productos, carrito de compras, control de inventario, pruebas automatizadas e integración continua.
 
 ---
 
-# 2. Arquitectura
+# Tecnologías
 
-## Arquitectura utilizada
+| Tecnología | Versión |
+|------------|----------|
+| Java | 17 |
+| Spring Boot | 3.x |
+| Spring Security | JWT |
+| Spring Data JPA | Hibernate |
+| PostgreSQL | Supabase |
+| H2 Database | Pruebas de integración |
+| Maven | 3.x |
+| Swagger / OpenAPI | springdoc |
+| JUnit 5 | Testing |
+| Mockito | Unit Testing |
+| MockMvc | Integration Testing |
+| JaCoCo | Cobertura |
+| GitHub Actions | CI |
 
-- Arquitectura en capas
-    - Controller
-    - Service
-    - Repository
-    - Entity
-    - DTO
+---
 
-## Patrones de diseño
+# Arquitectura
+
+Arquitectura en capas.
+
+```
+Controller
+      │
+      ▼
+Service
+      │
+      ▼
+Repository
+      │
+      ▼
+PostgreSQL
+```
+
+## Patrones implementados
 
 - DTO Pattern
 - Repository Pattern
 - Service Layer
 - Builder Pattern (Lombok)
 - Dependency Injection
-- Singleton (Beans de Spring)
+- Singleton (Beans Spring)
 
 ---
 
-# 3. Autenticación
+# Autenticación
 
-JWT Bearer Token
+La autenticación se realiza mediante **JWT Bearer Token**.
 
-Ejemplo
+```
+Authorization: Bearer eyJhbGciOiJIUzI1Ni...
+```
 
-Authorization
+Flujo:
 
-Bearer eyJhbGc....
+```
+Registro
+      │
+      ▼
+BCrypt Password Encoder
+      │
+      ▼
+Login
+      │
+      ▼
+AuthenticationManager
+      │
+      ▼
+JWT
+      │
+      ▼
+Endpoints protegidos
+```
 
 ---
 
-# 4. Variables de entorno
-
-application.properties
+# Variables de entorno
 
 ```properties
 spring.datasource.url=${SUPABASE_DB_URL}
@@ -64,22 +96,19 @@ jwt.secret=${JWT_SECRET}
 jwt.expiration=86400000
 ```
 
-Variables
-
 | Variable | Descripción |
 |----------|-------------|
 | SUPABASE_DB_URL | URL PostgreSQL |
 | SUPABASE_DB_USER | Usuario |
 | SUPABASE_DB_PASSWORD | Contraseña |
 | JWT_SECRET | Llave JWT |
+| JWT_EXPIRATION | Tiempo de expiración |
 
 ---
 
-# 5. Base de datos
+# Base de datos
 
-## Tablas
-
-### usuarios
+## usuarios
 
 | Campo | Tipo |
 |-------|------|
@@ -90,7 +119,7 @@ Variables
 
 ---
 
-### productos
+## productos
 
 | Campo | Tipo |
 |-------|------|
@@ -102,7 +131,7 @@ Variables
 
 ---
 
-### carrito
+## carrito
 
 | Campo | Tipo |
 |-------|------|
@@ -112,7 +141,7 @@ Variables
 
 ---
 
-### carrito_items
+## carrito_items
 
 | Campo | Tipo |
 |-------|------|
@@ -120,176 +149,243 @@ Variables
 | carrito_id | FK |
 | producto_id | FK |
 | cantidad | integer |
- | precio_unitario | bigInteger
+| precio_unitario | numeric |
 
 ---
 
-# 6. Diagrama ER
+# Modelo Entidad Relación
 
-![Diagrama ERD](ERDFlashCart.png)
+![ERD](ERDFlashCart.png)
 
 ---
 
-# 7. Endpoints
+# Endpoints
+
+## Autenticación
+
+| Método | Endpoint |
+|---------|----------|
+| POST | /auth/register |
+| POST | /auth/login |
+
+---
 
 ## Productos
 
-### GET /productos
-
-Obtiene todos los productos.
-
-Respuesta
-
-```json
-[
-  {
-    "id":1,
-    "nombre":"Laptop",
-    "precio":15000,
-    "stock":10
-  }
-]
-```
-
----
-
-### GET /productos/{id}
-Obtiene productos por id
-```json
-{
-  "id":1,
-  "nombre":"Laptop",
-  "precio":15000,
-  "stock":10
-}
-```
-
----
-
-### POST /productos
-
-Crea un nuevo producto
-
-```json
-{
-  "nombre":"Laptop",
-  "descripcion":"Core i7",
-  "precio":15000,
-  "stock":5
-}
-```
-
-Response
-
-```json
-{
-  "id":1,
-  "nombre":"Laptop",
-  "precio":15000,
-  "stock":5
-}
-```
-
----
-
-### PUT /productos/{id}
-Actualiza un producto por id
-```json
-{
-  "nombre":"Laptop Lenovo",
-  "precio":16000,
-  "stock":8
-}
-```
-
----
-
-### DELETE /productos/{id}
-
-Elimina un producto de la lista
-
----
-
-## Usuarios
-
-POST /auth/register
-
-POST /auth/login
+| Método | Endpoint |
+|---------|----------|
+| GET | /productos |
+| GET | /productos/{id} |
+| POST | /productos |
+| PUT | /productos/{id} |
+| DELETE | /productos/{id} |
 
 ---
 
 ## Carrito
 
-GET /carrito/{usuarioId}
-
-POST /carrito/{usuarioId}/productos
-
-DELETE /carrito/{usuarioId}/productos/{productoId}
-
-POST /carrito/{usuarioId}/procesar
-
----
-
-# 8. Manejo de concurrencia
-
-La aplicación implementa manejo de concurrencia para evitar inconsistencias en el inventario cuando múltiples 
-usuarios intentan comprar el mismo producto simultáneamente.
-
-Se utilizan:
-- Transacciones (@Transactional)
-- Validación de stock antes de confirmar la compra
-- Confirmación de cambios únicamente cuando la transacción finaliza correctamente
-- Rollback automático ante cualquier excepción
-- Actualización atómica del inventario
-
-Esto evita ventas duplicadas y cantidades negativas en stock.
+| Método | Endpoint |
+|---------|----------|
+| GET | /carrito/{usuarioId} |
+| POST | /carrito/{usuarioId}/productos |
+| DELETE | /carrito/{usuarioId}/productos/{productoId} |
+| POST | /carrito/{usuarioId}/procesar |
 
 ---
 
-# 9. Pruebas
+# Manejo de concurrencia
 
-Pruebas unitarias realizadas con
+Para evitar inconsistencias en el inventario se implementa:
+
+- @Transactional
+- Validación de stock
+- Rollback automático
+- Actualización atómica
+- Confirmación únicamente cuando finaliza correctamente la transacción
+
+---
+
+# Pruebas
+
+## Pruebas unitarias
+
+Frameworks
 
 - JUnit 5
 - Mockito
 
+Cobertura de:
 
+- ProductosService
+- Validaciones
+- Manejo de excepciones
+- Control de inventario
+- Reglas de negocio
 
 ---
 
-# 10. Swagger
+## Pruebas de integración
+
+Frameworks
+
+- Spring Boot Test
+- MockMvc
+- H2 Database
+- @SpringBootTest
+- @Transactional
+
+### Casos implementados
+
+### Autenticación
+
+✔ Login correcto
+
+✔ Login con contraseña incorrecta
+
+✔ Registro exitoso
+
+✔ Registro de usuario existente
+
+Las pruebas verifican:
+
+- Código HTTP
+- Respuesta JSON
+- Persistencia
+- Flujo completo de autenticación
+- Generación del JWT
+
+---
+
+# Cobertura de código
+
+El proyecto utiliza **JaCoCo**.
+
+Generar reporte:
+
+```bash
+mvn clean verify
+```
+
+Reporte:
+
+```
+target/site/jacoco/index.html
+```
+
+Incluye:
+
+- Cobertura por líneas
+- Cobertura por métodos
+- Cobertura por clases
+- Cobertura por paquetes
+
+---
+
+# Integración Continua
+
+El proyecto utiliza **GitHub Actions**.
+
+El pipeline ejecuta automáticamente:
+
+- Compilación
+- Tests unitarios
+- Tests de integración
+- Reporte JaCoCo
+
+---
+
+# Swagger
 
 Swagger UI
 
+```
 http://localhost:8080/swagger-ui/index.html
+```
 
 OpenAPI
 
+```
 http://localhost:8080/v3/api-docs
+```
 
 ---
 
-# 11. Ejecución
+# Instalación
 
-Clonar
+Clonar repositorio
 
-git clone ...
+```bash
+git clone https://github.com/USUARIO/flashcart-backend.git
+```
 
-Instalar
+Entrar al proyecto
 
+```bash
+cd flashcart-backend
+```
+
+Instalar dependencias
+
+```bash
 mvn clean install
+```
 
 Ejecutar
 
+```bash
 mvn spring-boot:run
+```
 
 ---
 
-# 12. Ejecutar pruebas
+# Ejecutar pruebas
 
-Backend
+Pruebas
 
+```bash
 mvn test
+```
 
+Pruebas + cobertura
+
+```bash
+mvn clean verify
+```
 
 ---
+
+# Estructura del proyecto
+
+```
+src
+├── controllers
+├── services
+├── repositories
+├── models
+├── dto
+├── config
+├── security
+├── exceptions
+├── tests
+└── resources
+```
+
+---
+
+# Características implementadas
+
+- Autenticación JWT
+- Registro de usuarios
+- Login seguro
+- BCrypt Password Encoder
+- CRUD de productos
+- Carrito de compras
+- Control de inventario
+- Validaciones
+- Manejo global de excepciones
+- Swagger/OpenAPI
+- Pruebas unitarias
+- Pruebas de integración
+- JaCoCo
+- GitHub Actions
+- Arquitectura en capas

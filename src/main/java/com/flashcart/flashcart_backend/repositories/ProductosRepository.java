@@ -12,19 +12,26 @@ import java.util.UUID;
 
 @Repository
 public interface ProductosRepository extends JpaRepository<Productos, UUID> {
-    //Se obtiene listado de productos disponibles eb el catalogo
+    /**
+     * Obtiene los productos con stock disponible para su venta.
+     */
     List<Productos> findByStockGreaterThan(Integer stockMinimo);
-
-    //Se verifica la informacion del stock
+    /**
+     * Consulta la cantidad de stock disponible de un producto.
+     */
     @Query("SELECT p.stock FROM Productos p WHERE p.id = :id")
     Integer findStockById(@Param("id") UUID id);
-
-    //Calculo de decremento del stock disponible
+    /**
+     * Reduce el stock de un producto al agregarlo al carrito,
+     * siempre que exista suficiente inventario.
+     */
     @Modifying
     @Query("UPDATE Productos p SET p.stock = p.stock - :cantidad WHERE p.id = :id AND p.stock >= :cantidad")
     int decrementarStock(@Param("id") UUID id, @Param("cantidad") Integer cantidad);
-
-    //Restaura el stock disponible al eliminar el carrito creado
+    /**
+     * Restaura el stock de un producto al eliminarlo del carrito
+     * o cancelar la operación.
+     */
     @Modifying
     @Query("UPDATE Productos p SET p.stock = p.stock + :cantidad WHERE p.id = :id")
     int incrementarStock(@Param("id") UUID id, @Param("cantidad") Integer cantidad);

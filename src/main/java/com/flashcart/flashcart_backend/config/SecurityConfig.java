@@ -33,6 +33,11 @@ public class SecurityConfig {
         this.userDetailsService = userDetailsService;
     }
 
+    /**
+     * Configura las reglas de seguridad de la aplicación,
+     * definiendo los endpoints públicos, la autenticación
+     * mediante JWT y la política de sesiones sin estado.
+     */
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
@@ -58,6 +63,10 @@ public class SecurityConfig {
         return http.build();
     }
 
+    /**
+     * Configura las políticas CORS para permitir la comunicación
+     * entre el frontend y el backend desde los dominios autorizados.
+     */
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
@@ -72,6 +81,11 @@ public class SecurityConfig {
         return source;
     }
 
+    /**
+     * Configura el proveedor de autenticación utilizando
+     * UserDetailsService para cargar usuarios y BCrypt
+     * para validar las contraseñas.
+     */
     @Bean
     public AuthenticationProvider authenticationProvider() {
         DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
@@ -80,11 +94,20 @@ public class SecurityConfig {
         return authProvider;
     }
 
+    /**
+     * Proporciona el AuthenticationManager encargado de
+     * validar las credenciales durante el inicio de sesión.
+     */
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception {
         return config.getAuthenticationManager();
     }
 
+    /**
+     * Define el codificador de contraseñas utilizando
+     * el algoritmo BCrypt para almacenar y validar
+     * contraseñas de forma segura.
+     */
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();

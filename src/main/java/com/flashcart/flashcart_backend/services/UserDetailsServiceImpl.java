@@ -14,6 +14,11 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         this.usuarioRepository = usuarioRepository;
     }
 
+    /**
+     * Carga un usuario por su nombre de usuario para el proceso
+     * de autenticación de Spring Security. Si el usuario no existe,
+     * lanza una excepción UsernameNotFoundException.
+     */
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         return usuarioRepository.findByUsername(username)
