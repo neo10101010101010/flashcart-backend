@@ -3,6 +3,7 @@ package com.flashcart.flashcart_backend.DTOS;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 public class RegisterRequest {
+    @Schema(hidden = true)
     private Long id;
     @Schema(
             description = "username del usuario",
