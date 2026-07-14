@@ -1,0 +1,59 @@
+2026-07-13 09:17:04.770 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-13 09:17:04.819 INFO  [main] c.f.f.FlashcartBackendApplicationTests - Starting FlashcartBackendApplicationTests using Java 19.0.1 with PID 7396 (started by xblux in C:\Users\xblux\Documents\flashcart-backend\flashcart-backend)
+2026-07-13 09:17:04.819 DEBUG [main] c.f.f.FlashcartBackendApplicationTests - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-13 09:17:04.820 INFO  [main] c.f.f.FlashcartBackendApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-07-13 09:17:06.623 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-13 09:17:06.743 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 102 ms. Found 4 JPA repository interfaces.
+2026-07-13 09:17:07.528 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-13 09:17:07.635 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-13 09:17:07.681 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-13 09:17:07.820 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-13 09:17:07.862 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-13 09:17:09.268 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7bdaf563
+2026-07-13 09:17:09.270 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-13 09:17:09.805 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-13 09:17:10.814 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-13 09:17:11.312 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-13 09:17:11.790 INFO  [main] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-13 09:17:11.791 WARN  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-13 09:17:11.881 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-13 09:17:12.680 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-13 09:17:13.241 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-13 09:17:14.127 INFO  [main] c.f.f.FlashcartBackendApplicationTests - Started FlashcartBackendApplicationTests in 9.871 seconds (process running for 12.964)
+2026-07-13 09:17:14.333 INFO  [main] c.f.f.services.ProductosService - Intentando eliminar producto con ID: c4ca8ab3-6979-4e32-a65d-60b56a560551
+2026-07-13 09:17:14.333 INFO  [main] c.f.f.services.ProductosService - Producto eliminado exitosamente: c4ca8ab3-6979-4e32-a65d-60b56a560551
+2026-07-13 09:17:14.338 DEBUG [main] c.f.f.services.ProductosService - Intentando decrementar stock de producto 209cff40-5220-43ef-8092-792596013424 en 3 unidades
+2026-07-13 09:17:14.338 INFO  [main] c.f.f.services.ProductosService - Stock decrementado exitosamente para producto 209cff40-5220-43ef-8092-792596013424
+2026-07-13 09:17:14.439 INFO  [main] c.f.f.services.ProductosService - Actualizando producto con ID: 1d36e41b-56d8-483d-adb2-b8be9447badf
+2026-07-13 09:17:14.440 DEBUG [main] c.f.f.services.ProductosService - Nuevos valores - Nombre: null, Precio: null, Stock: -1
+2026-07-13 09:17:14.456 INFO  [main] c.f.f.ProductoServiceTest - Mensaje de la excepción: La cantidad debe ser positiva
+2026-07-13 09:17:14.463 DEBUG [main] c.f.f.services.ProductosService - Consultando stock del producto: 264d6c2c-daac-4634-9c5e-d739b7172d48
+2026-07-13 09:17:14.463 WARN  [main] c.f.f.services.ProductosService - Producto no encontrado al consultar stock: 264d6c2c-daac-4634-9c5e-d739b7172d48
+2026-07-13 09:17:14.468 DEBUG [main] c.f.f.services.ProductosService - Consultando stock del producto: 4f8a2014-c953-4995-983a-85967dce595c
+2026-07-13 09:17:14.469 DEBUG [main] c.f.f.services.ProductosService - Stock actual del producto 4f8a2014-c953-4995-983a-85967dce595c: 3
+2026-07-13 09:17:14.469 WARN  [main] c.f.f.services.ProductosService - Stock insuficiente para producto 4f8a2014-c953-4995-983a-85967dce595c: requerido 5, disponible 3
+2026-07-13 09:17:14.473 INFO  [main] c.f.f.services.ProductosService - Creando nuevo producto: Laptop Gamer
+2026-07-13 09:17:14.474 INFO  [main] c.f.f.services.ProductosService - Producto creado con ID: 260ce665-3f47-4cde-abef-caadfa5892b6
+2026-07-13 09:17:14.483 INFO  [main] c.f.f.services.ProductosService - Actualizando producto con ID: e575ac1c-80c3-484d-8078-e8c20c28c587
+2026-07-13 09:17:14.484 DEBUG [main] c.f.f.services.ProductosService - Nuevos valores - Nombre: null, Precio: 1999.99, Stock: 5
+2026-07-13 09:17:14.484 INFO  [main] c.f.f.services.ProductosService - Producto actualizado exitosamente - ID: e575ac1c-80c3-484d-8078-e8c20c28c587, Nuevo precio: 1999.99, Nuevo stock: 5
+2026-07-13 09:17:14.490 INFO  [main] c.f.f.services.ProductosService - Creando nuevo producto: Laptop Gamer
+2026-07-13 09:17:14.495 INFO  [main] c.f.f.services.ProductosService - Intentando eliminar producto con ID: 50fb0446-bf8f-46d9-a236-7aa11ce09407
+2026-07-13 09:17:14.495 WARN  [main] c.f.f.services.ProductosService - Intento de eliminar producto inexistente con ID: 50fb0446-bf8f-46d9-a236-7aa11ce09407
+2026-07-13 09:17:14.500 DEBUG [main] c.f.f.services.ProductosService - Consultando stock del producto: 5ad404cf-9107-4bf0-9ea0-bb64fa187eee
+2026-07-13 09:17:14.500 DEBUG [main] c.f.f.services.ProductosService - Stock actual del producto 5ad404cf-9107-4bf0-9ea0-bb64fa187eee: 10
+2026-07-13 09:17:14.504 DEBUG [main] c.f.f.services.ProductosService - Intentando decrementar stock de producto d80fe10d-e946-4ab3-86dc-987127cddfcf en 3 unidades
+2026-07-13 09:17:14.504 WARN  [main] c.f.f.services.ProductosService - Intento fallido de decrementar stock: stock insuficiente para producto d80fe10d-e946-4ab3-86dc-987127cddfcf
+2026-07-13 09:17:14.507 DEBUG [main] c.f.f.services.ProductosService - Consultando stock del producto: e4d1c18d-d595-4798-a78f-b21afba35182
+2026-07-13 09:17:14.508 DEBUG [main] c.f.f.services.ProductosService - Stock actual del producto e4d1c18d-d595-4798-a78f-b21afba35182: 10
+2026-07-13 09:17:14.520 INFO  [main] c.f.f.ProductoServiceTest - Mensaje de la excepción: Producto no encontrado con ID: 8c9aa8a0-4a46-4e7f-b341-483b24018571
+2026-07-13 09:17:14.570 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-13 09:17:14.574 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-13 09:17:15.370 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

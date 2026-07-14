@@ -1,17 +1,17 @@
-2026-07-13 09:17:04.770 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-07-13 09:17:04.819 INFO  [main] c.f.f.FlashcartBackendApplicationTests - Starting FlashcartBackendApplicationTests using Java 19.0.1 with PID 7396 (started by xblux in C:\Users\xblux\Documents\flashcart-backend\flashcart-backend)
-2026-07-13 09:17:04.819 DEBUG [main] c.f.f.FlashcartBackendApplicationTests - Running with Spring Boot v3.5.16, Spring v6.2.19
-2026-07-13 09:17:04.820 INFO  [main] c.f.f.FlashcartBackendApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2026-07-13 09:17:06.623 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-07-13 09:17:06.743 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 102 ms. Found 4 JPA repository interfaces.
-2026-07-13 09:17:07.528 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-07-13 09:17:07.635 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.53.Final
-2026-07-13 09:17:07.681 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2026-07-13 09:17:07.820 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-07-13 09:17:07.862 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-07-13 09:17:09.268 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7bdaf563
-2026-07-13 09:17:09.270 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-07-13 09:17:09.805 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2026-07-14 10:40:57.176 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-14 10:40:57.230 INFO  [main] c.f.f.AuthIntegrationTest - Starting AuthIntegrationTest using Java 19.0.1 with PID 35596 (started by xblux in C:\Users\xblux\Documents\flashcart-backend\flashcart-backend)
+2026-07-14 10:40:57.231 DEBUG [main] c.f.f.AuthIntegrationTest - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-14 10:40:57.232 INFO  [main] c.f.f.AuthIntegrationTest - The following 1 profile is active: "test"
+2026-07-14 10:40:58.592 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 10:40:58.674 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 4 JPA repository interfaces.
+2026-07-14 10:40:59.237 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-14 10:40:59.316 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-14 10:40:59.365 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-14 10:40:59.929 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 10:40:59.969 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 10:41:01.372 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@32cde414
+2026-07-14 10:41:01.373 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 10:41:01.871 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.6
@@ -19,41 +19,805 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-07-13 09:17:10.814 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-07-13 09:17:11.312 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-07-13 09:17:11.790 INFO  [main] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2026-07-13 09:17:11.791 WARN  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-2026-07-13 09:17:11.881 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-07-13 09:17:12.680 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-07-13 09:17:13.241 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
-2026-07-13 09:17:14.127 INFO  [main] c.f.f.FlashcartBackendApplicationTests - Started FlashcartBackendApplicationTests in 9.871 seconds (process running for 12.964)
-2026-07-13 09:17:14.333 INFO  [main] c.f.f.services.ProductosService - Intentando eliminar producto con ID: c4ca8ab3-6979-4e32-a65d-60b56a560551
-2026-07-13 09:17:14.333 INFO  [main] c.f.f.services.ProductosService - Producto eliminado exitosamente: c4ca8ab3-6979-4e32-a65d-60b56a560551
-2026-07-13 09:17:14.338 DEBUG [main] c.f.f.services.ProductosService - Intentando decrementar stock de producto 209cff40-5220-43ef-8092-792596013424 en 3 unidades
-2026-07-13 09:17:14.338 INFO  [main] c.f.f.services.ProductosService - Stock decrementado exitosamente para producto 209cff40-5220-43ef-8092-792596013424
-2026-07-13 09:17:14.439 INFO  [main] c.f.f.services.ProductosService - Actualizando producto con ID: 1d36e41b-56d8-483d-adb2-b8be9447badf
-2026-07-13 09:17:14.440 DEBUG [main] c.f.f.services.ProductosService - Nuevos valores - Nombre: null, Precio: null, Stock: -1
-2026-07-13 09:17:14.456 INFO  [main] c.f.f.ProductoServiceTest - Mensaje de la excepción: La cantidad debe ser positiva
-2026-07-13 09:17:14.463 DEBUG [main] c.f.f.services.ProductosService - Consultando stock del producto: 264d6c2c-daac-4634-9c5e-d739b7172d48
-2026-07-13 09:17:14.463 WARN  [main] c.f.f.services.ProductosService - Producto no encontrado al consultar stock: 264d6c2c-daac-4634-9c5e-d739b7172d48
-2026-07-13 09:17:14.468 DEBUG [main] c.f.f.services.ProductosService - Consultando stock del producto: 4f8a2014-c953-4995-983a-85967dce595c
-2026-07-13 09:17:14.469 DEBUG [main] c.f.f.services.ProductosService - Stock actual del producto 4f8a2014-c953-4995-983a-85967dce595c: 3
-2026-07-13 09:17:14.469 WARN  [main] c.f.f.services.ProductosService - Stock insuficiente para producto 4f8a2014-c953-4995-983a-85967dce595c: requerido 5, disponible 3
-2026-07-13 09:17:14.473 INFO  [main] c.f.f.services.ProductosService - Creando nuevo producto: Laptop Gamer
-2026-07-13 09:17:14.474 INFO  [main] c.f.f.services.ProductosService - Producto creado con ID: 260ce665-3f47-4cde-abef-caadfa5892b6
-2026-07-13 09:17:14.483 INFO  [main] c.f.f.services.ProductosService - Actualizando producto con ID: e575ac1c-80c3-484d-8078-e8c20c28c587
-2026-07-13 09:17:14.484 DEBUG [main] c.f.f.services.ProductosService - Nuevos valores - Nombre: null, Precio: 1999.99, Stock: 5
-2026-07-13 09:17:14.484 INFO  [main] c.f.f.services.ProductosService - Producto actualizado exitosamente - ID: e575ac1c-80c3-484d-8078-e8c20c28c587, Nuevo precio: 1999.99, Nuevo stock: 5
-2026-07-13 09:17:14.490 INFO  [main] c.f.f.services.ProductosService - Creando nuevo producto: Laptop Gamer
-2026-07-13 09:17:14.495 INFO  [main] c.f.f.services.ProductosService - Intentando eliminar producto con ID: 50fb0446-bf8f-46d9-a236-7aa11ce09407
-2026-07-13 09:17:14.495 WARN  [main] c.f.f.services.ProductosService - Intento de eliminar producto inexistente con ID: 50fb0446-bf8f-46d9-a236-7aa11ce09407
-2026-07-13 09:17:14.500 DEBUG [main] c.f.f.services.ProductosService - Consultando stock del producto: 5ad404cf-9107-4bf0-9ea0-bb64fa187eee
-2026-07-13 09:17:14.500 DEBUG [main] c.f.f.services.ProductosService - Stock actual del producto 5ad404cf-9107-4bf0-9ea0-bb64fa187eee: 10
-2026-07-13 09:17:14.504 DEBUG [main] c.f.f.services.ProductosService - Intentando decrementar stock de producto d80fe10d-e946-4ab3-86dc-987127cddfcf en 3 unidades
-2026-07-13 09:17:14.504 WARN  [main] c.f.f.services.ProductosService - Intento fallido de decrementar stock: stock insuficiente para producto d80fe10d-e946-4ab3-86dc-987127cddfcf
-2026-07-13 09:17:14.507 DEBUG [main] c.f.f.services.ProductosService - Consultando stock del producto: e4d1c18d-d595-4798-a78f-b21afba35182
-2026-07-13 09:17:14.508 DEBUG [main] c.f.f.services.ProductosService - Stock actual del producto e4d1c18d-d595-4798-a78f-b21afba35182: 10
-2026-07-13 09:17:14.520 INFO  [main] c.f.f.ProductoServiceTest - Mensaje de la excepción: Producto no encontrado con ID: 8c9aa8a0-4a46-4e7f-b341-483b24018571
-2026-07-13 09:17:14.570 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-07-13 09:17:14.574 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-07-13 09:17:15.370 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 10:41:02.842 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 10:41:03.350 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 10:41:03.763 INFO  [main] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-14 10:41:03.764 WARN  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-14 10:41:03.822 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 10:41:04.483 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 10:41:04.907 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-14 10:41:05.506 DEBUG [main] c.f.f.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-14 10:41:05.507 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-07-14 10:41:05.507 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-07-14 10:41:05.508 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-07-14 10:41:05.593 INFO  [main] c.f.f.AuthIntegrationTest - Started AuthIntegrationTest in 8.869 seconds (process running for 10.01)
+2026-07-14 10:41:06.235 DEBUG [main] org.hibernate.SQL - select u1_0.id from usuario u1_0 where u1_0.username=? fetch first ? rows only
+2026-07-14 10:41:06.448 DEBUG [main] org.hibernate.SQL - insert into usuario (email,password,username) values (?,?,?)
+2026-07-14 10:41:06.745 DEBUG [main] org.hibernate.SQL - select u1_0.id,u1_0.email,u1_0.password,u1_0.username from usuario u1_0 where u1_0.username=?
+2026-07-14 10:41:06.906 DEBUG [main] org.hibernate.SQL - select u1_0.id,u1_0.email,u1_0.password,u1_0.username from usuario u1_0 where u1_0.username=?
+2026-07-14 10:41:07.179 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 10:41:07.181 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 10:41:07.785 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 10:41:30.557 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-14 10:41:30.599 INFO  [main] c.f.f.AuthIntegrationTest - Starting AuthIntegrationTest using Java 19.0.1 with PID 22640 (started by xblux in C:\Users\xblux\Documents\flashcart-backend\flashcart-backend)
+2026-07-14 10:41:30.600 DEBUG [main] c.f.f.AuthIntegrationTest - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-14 10:41:30.601 INFO  [main] c.f.f.AuthIntegrationTest - The following 1 profile is active: "test"
+2026-07-14 10:41:31.823 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 10:41:31.894 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 4 JPA repository interfaces.
+2026-07-14 10:41:32.443 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-14 10:41:32.522 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-14 10:41:32.562 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-14 10:41:32.885 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 10:41:32.918 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 10:41:33.944 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@78e50fca
+2026-07-14 10:41:33.946 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 10:41:34.432 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 10:41:35.294 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 10:41:35.688 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 10:41:36.039 INFO  [main] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-14 10:41:36.040 WARN  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-14 10:41:36.117 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 10:41:36.724 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 10:41:37.103 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-14 10:41:37.682 DEBUG [main] c.f.f.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-14 10:41:37.683 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-07-14 10:41:37.683 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-07-14 10:41:37.684 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-07-14 10:41:37.761 INFO  [main] c.f.f.AuthIntegrationTest - Started AuthIntegrationTest in 7.591 seconds (process running for 8.609)
+2026-07-14 10:41:38.318 DEBUG [main] org.hibernate.SQL - select u1_0.id from usuario u1_0 where u1_0.username=? fetch first ? rows only
+2026-07-14 10:41:38.519 DEBUG [main] org.hibernate.SQL - insert into usuario (email,password,username) values (?,?,?)
+2026-07-14 10:41:38.785 DEBUG [main] org.hibernate.SQL - select u1_0.id,u1_0.email,u1_0.password,u1_0.username from usuario u1_0 where u1_0.username=?
+2026-07-14 10:41:39.066 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 10:41:39.069 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 10:41:39.682 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 10:43:19.631 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-14 10:43:19.672 INFO  [main] c.f.f.AuthIntegrationTest - Starting AuthIntegrationTest using Java 19.0.1 with PID 24460 (started by xblux in C:\Users\xblux\Documents\flashcart-backend\flashcart-backend)
+2026-07-14 10:43:19.672 DEBUG [main] c.f.f.AuthIntegrationTest - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-14 10:43:19.673 INFO  [main] c.f.f.AuthIntegrationTest - The following 1 profile is active: "test"
+2026-07-14 10:43:20.884 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 10:43:20.968 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73 ms. Found 4 JPA repository interfaces.
+2026-07-14 10:43:21.516 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-14 10:43:21.591 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-14 10:43:21.643 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-14 10:43:21.946 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 10:43:21.977 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 10:43:23.143 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@16c9e378
+2026-07-14 10:43:23.144 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 10:43:23.651 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 10:43:24.512 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 10:43:24.907 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 10:43:25.252 INFO  [main] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-14 10:43:25.252 WARN  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-14 10:43:25.303 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 10:43:25.888 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 10:43:26.269 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-14 10:43:26.853 DEBUG [main] c.f.f.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-14 10:43:26.854 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-07-14 10:43:26.854 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-07-14 10:43:26.856 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-07-14 10:43:26.935 INFO  [main] c.f.f.AuthIntegrationTest - Started AuthIntegrationTest in 7.702 seconds (process running for 8.756)
+2026-07-14 10:43:27.550 DEBUG [main] org.hibernate.SQL - select u1_0.id from usuario u1_0 where u1_0.username=? fetch first ? rows only
+2026-07-14 10:43:27.748 DEBUG [main] org.hibernate.SQL - insert into usuario (email,password,username) values (?,?,?)
+2026-07-14 10:43:28.021 DEBUG [main] org.hibernate.SQL - select u1_0.id,u1_0.email,u1_0.password,u1_0.username from usuario u1_0 where u1_0.username=?
+2026-07-14 10:43:28.312 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 10:43:28.315 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 10:43:29.038 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 10:48:16.306 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-14 10:48:16.350 INFO  [main] c.f.f.AuthIntegrationTest - Starting AuthIntegrationTest using Java 19.0.1 with PID 40832 (started by xblux in C:\Users\xblux\Documents\flashcart-backend\flashcart-backend)
+2026-07-14 10:48:16.351 DEBUG [main] c.f.f.AuthIntegrationTest - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-14 10:48:16.352 INFO  [main] c.f.f.AuthIntegrationTest - The following 1 profile is active: "test"
+2026-07-14 10:48:17.576 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 10:48:17.652 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64 ms. Found 4 JPA repository interfaces.
+2026-07-14 10:48:18.214 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-14 10:48:18.280 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-14 10:48:18.321 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-14 10:48:18.621 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 10:48:18.653 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 10:48:19.831 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@78e50fca
+2026-07-14 10:48:19.833 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 10:48:20.319 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 10:48:21.167 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 10:48:21.549 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 10:48:21.902 INFO  [main] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-14 10:48:21.903 WARN  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-14 10:48:21.960 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 10:48:22.592 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 10:48:22.950 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-14 10:48:23.515 DEBUG [main] c.f.f.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-14 10:48:23.516 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-07-14 10:48:23.516 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-07-14 10:48:23.518 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-07-14 10:48:23.594 INFO  [main] c.f.f.AuthIntegrationTest - Started AuthIntegrationTest in 7.681 seconds (process running for 8.773)
+2026-07-14 10:48:24.144 DEBUG [main] org.hibernate.SQL - select u1_0.id from usuario u1_0 where u1_0.username=? fetch first ? rows only
+2026-07-14 10:48:24.340 DEBUG [main] org.hibernate.SQL - insert into usuario (email,password,username) values (?,?,?)
+2026-07-14 10:48:24.620 DEBUG [main] org.hibernate.SQL - select u1_0.id,u1_0.email,u1_0.password,u1_0.username from usuario u1_0 where u1_0.username=?
+2026-07-14 10:48:24.891 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 10:48:24.893 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 10:48:25.526 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 10:50:04.387 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-14 10:50:04.427 INFO  [main] c.f.f.AuthIntegrationTest - Starting AuthIntegrationTest using Java 19.0.1 with PID 37704 (started by xblux in C:\Users\xblux\Documents\flashcart-backend\flashcart-backend)
+2026-07-14 10:50:04.428 DEBUG [main] c.f.f.AuthIntegrationTest - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-14 10:50:04.428 INFO  [main] c.f.f.AuthIntegrationTest - The following 1 profile is active: "test"
+2026-07-14 10:50:05.633 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 10:50:05.714 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 70 ms. Found 4 JPA repository interfaces.
+2026-07-14 10:50:06.244 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-14 10:50:06.302 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-14 10:50:06.343 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-14 10:50:06.638 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 10:50:06.676 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 10:50:07.813 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@178c6261
+2026-07-14 10:50:07.814 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 10:50:08.308 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 10:50:09.140 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 10:50:09.525 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 10:50:09.895 INFO  [main] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-14 10:50:09.896 WARN  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-14 10:50:09.950 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 10:50:10.553 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 10:50:10.927 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-14 10:50:11.454 DEBUG [main] c.f.f.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-14 10:50:11.455 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-07-14 10:50:11.455 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-07-14 10:50:11.457 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2026-07-14 10:50:11.531 INFO  [main] c.f.f.AuthIntegrationTest - Started AuthIntegrationTest in 7.537 seconds (process running for 8.546)
+2026-07-14 10:50:12.045 DEBUG [main] org.hibernate.SQL - select u1_0.id from usuario u1_0 where u1_0.username=? fetch first ? rows only
+2026-07-14 10:50:12.236 DEBUG [main] org.hibernate.SQL - insert into usuario (email,password,username) values (?,?,?)
+2026-07-14 10:50:12.506 DEBUG [main] org.hibernate.SQL - select u1_0.id,u1_0.email,u1_0.password,u1_0.username from usuario u1_0 where u1_0.username=?
+2026-07-14 10:50:12.792 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 10:50:12.794 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 10:50:13.233 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 10:53:13.365 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-14 10:53:13.405 INFO  [main] c.f.f.AuthIntegrationTest - Starting AuthIntegrationTest using Java 19.0.1 with PID 23056 (started by xblux in C:\Users\xblux\Documents\flashcart-backend\flashcart-backend)
+2026-07-14 10:53:13.407 DEBUG [main] c.f.f.AuthIntegrationTest - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-14 10:53:13.408 INFO  [main] c.f.f.AuthIntegrationTest - The following 1 profile is active: "test"
+2026-07-14 10:53:14.614 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 10:53:14.695 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 70 ms. Found 4 JPA repository interfaces.
+2026-07-14 10:53:15.232 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-14 10:53:15.292 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-14 10:53:15.325 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-14 10:53:15.612 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 10:53:15.639 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 10:53:16.832 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@78e50fca
+2026-07-14 10:53:16.833 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 10:53:17.326 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 10:53:18.207 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 10:53:18.593 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 10:53:18.956 INFO  [main] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-14 10:53:18.956 WARN  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-14 10:53:19.013 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 10:53:19.607 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 10:53:19.980 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-14 10:53:20.531 DEBUG [main] c.f.f.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-14 10:53:20.532 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-07-14 10:53:20.532 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-07-14 10:53:20.533 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-07-14 10:53:20.614 INFO  [main] c.f.f.AuthIntegrationTest - Started AuthIntegrationTest in 7.645 seconds (process running for 8.683)
+2026-07-14 10:53:21.200 DEBUG [main] org.hibernate.SQL - select u1_0.id from usuario u1_0 where u1_0.username=? fetch first ? rows only
+2026-07-14 10:53:21.406 DEBUG [main] org.hibernate.SQL - insert into usuario (email,password,username) values (?,?,?)
+2026-07-14 10:53:21.670 DEBUG [main] org.hibernate.SQL - select u1_0.id,u1_0.email,u1_0.password,u1_0.username from usuario u1_0 where u1_0.username=?
+2026-07-14 10:53:21.952 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 10:53:21.954 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 10:53:22.571 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 10:54:49.998 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-14 10:54:50.038 INFO  [main] c.f.f.AuthIntegrationTest - Starting AuthIntegrationTest using Java 19.0.1 with PID 40844 (started by xblux in C:\Users\xblux\Documents\flashcart-backend\flashcart-backend)
+2026-07-14 10:54:50.039 DEBUG [main] c.f.f.AuthIntegrationTest - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-14 10:54:50.040 INFO  [main] c.f.f.AuthIntegrationTest - The following 1 profile is active: "test"
+2026-07-14 10:54:51.253 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 10:54:51.324 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 4 JPA repository interfaces.
+2026-07-14 10:54:51.862 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-14 10:54:51.927 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-14 10:54:51.971 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-14 10:54:52.295 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 10:54:52.324 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 10:54:53.513 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@16c9e378
+2026-07-14 10:54:53.515 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 10:54:54.012 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 10:54:54.853 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 10:54:55.252 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 10:54:55.603 INFO  [main] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-14 10:54:55.603 WARN  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-14 10:54:55.659 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 10:54:56.229 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 10:54:56.630 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-14 10:54:57.206 DEBUG [main] c.f.f.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-14 10:54:57.207 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-07-14 10:54:57.207 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-07-14 10:54:57.209 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2026-07-14 10:54:57.292 INFO  [main] c.f.f.AuthIntegrationTest - Started AuthIntegrationTest in 7.688 seconds (process running for 8.711)
+2026-07-14 10:54:57.842 DEBUG [main] org.hibernate.SQL - select u1_0.id from usuario u1_0 where u1_0.username=? fetch first ? rows only
+2026-07-14 10:54:58.038 DEBUG [main] org.hibernate.SQL - insert into usuario (email,password,username) values (?,?,?)
+2026-07-14 10:54:58.245 DEBUG [main] org.hibernate.SQL - select u1_0.id from usuario u1_0 where u1_0.username=? fetch first ? rows only
+2026-07-14 10:54:58.397 DEBUG [main] org.hibernate.SQL - insert into usuario (email,password,username) values (?,?,?)
+2026-07-14 10:54:58.691 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 10:54:58.693 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 10:54:59.429 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 10:55:17.942 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-14 10:55:17.983 INFO  [main] c.f.f.AuthIntegrationTest - Starting AuthIntegrationTest using Java 19.0.1 with PID 31360 (started by xblux in C:\Users\xblux\Documents\flashcart-backend\flashcart-backend)
+2026-07-14 10:55:17.984 DEBUG [main] c.f.f.AuthIntegrationTest - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-14 10:55:17.985 INFO  [main] c.f.f.AuthIntegrationTest - The following 1 profile is active: "test"
+2026-07-14 10:55:19.180 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 10:55:19.254 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 4 JPA repository interfaces.
+2026-07-14 10:55:19.792 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-14 10:55:19.853 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-14 10:55:19.893 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-14 10:55:20.192 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 10:55:20.220 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 10:55:21.336 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2555a986
+2026-07-14 10:55:21.337 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 10:55:21.827 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 10:55:22.655 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 10:55:23.055 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 10:55:23.400 INFO  [main] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-14 10:55:23.401 WARN  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-14 10:55:23.457 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 10:55:24.013 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 10:55:24.372 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-14 10:55:24.969 DEBUG [main] c.f.f.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-14 10:55:24.970 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-07-14 10:55:24.970 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-07-14 10:55:24.971 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-07-14 10:55:25.041 INFO  [main] c.f.f.AuthIntegrationTest - Started AuthIntegrationTest in 7.5 seconds (process running for 8.515)
+2026-07-14 10:55:25.584 DEBUG [main] org.hibernate.SQL - select u1_0.id from usuario u1_0 where u1_0.username=? fetch first ? rows only
+2026-07-14 10:55:25.777 DEBUG [main] org.hibernate.SQL - insert into usuario (email,password,username) values (?,?,?)
+2026-07-14 10:55:25.975 DEBUG [main] org.hibernate.SQL - select u1_0.id from usuario u1_0 where u1_0.username=? fetch first ? rows only
+2026-07-14 10:55:26.193 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 10:55:26.196 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 10:55:26.627 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 11:04:39.599 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-14 11:04:39.636 INFO  [main] c.f.f.AuthIntegrationTest - Starting AuthIntegrationTest using Java 19.0.1 with PID 21124 (started by xblux in C:\Users\xblux\Documents\flashcart-backend\flashcart-backend)
+2026-07-14 11:04:39.637 DEBUG [main] c.f.f.AuthIntegrationTest - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-14 11:04:39.638 INFO  [main] c.f.f.AuthIntegrationTest - The following 1 profile is active: "test"
+2026-07-14 11:04:40.829 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 11:04:40.898 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 4 JPA repository interfaces.
+2026-07-14 11:04:41.456 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-14 11:04:41.515 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-14 11:04:41.557 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-14 11:04:41.899 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 11:04:41.943 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 11:04:43.150 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@50013a15
+2026-07-14 11:04:43.151 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 11:04:43.673 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 11:04:44.532 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 11:04:45.041 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 11:04:45.401 INFO  [main] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-14 11:04:45.401 WARN  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-14 11:04:45.457 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 11:04:46.046 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 11:04:46.437 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-14 11:04:47.022 DEBUG [main] c.f.f.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-14 11:04:47.023 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-07-14 11:04:47.023 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-07-14 11:04:47.024 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-07-14 11:04:47.104 INFO  [main] c.f.f.AuthIntegrationTest - Started AuthIntegrationTest in 7.905 seconds (process running for 8.922)
+2026-07-14 11:04:47.643 DEBUG [main] org.hibernate.SQL - select u1_0.id from usuario u1_0 where u1_0.username=? fetch first ? rows only
+2026-07-14 11:04:47.858 DEBUG [main] org.hibernate.SQL - insert into usuario (email,password,username) values (?,?,?)
+2026-07-14 11:04:48.063 DEBUG [main] org.hibernate.SQL - select u1_0.id from usuario u1_0 where u1_0.username=? fetch first ? rows only
+2026-07-14 11:04:48.312 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 11:04:48.314 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 11:04:48.778 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 11:08:55.105 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-14 11:08:55.149 INFO  [main] c.f.f.AuthIntegrationTest - Starting AuthIntegrationTest using Java 19.0.1 with PID 39352 (started by xblux in C:\Users\xblux\Documents\flashcart-backend\flashcart-backend)
+2026-07-14 11:08:55.151 DEBUG [main] c.f.f.AuthIntegrationTest - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-14 11:08:55.151 INFO  [main] c.f.f.AuthIntegrationTest - The following 1 profile is active: "test"
+2026-07-14 11:08:56.353 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 11:08:56.436 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71 ms. Found 4 JPA repository interfaces.
+2026-07-14 11:08:56.983 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-14 11:08:57.047 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-14 11:08:57.087 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-14 11:08:57.416 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 11:08:57.470 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 11:08:58.656 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5606d537
+2026-07-14 11:08:58.658 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 11:08:59.159 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 11:08:59.981 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 11:09:00.378 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 11:09:00.744 INFO  [main] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-14 11:09:00.745 WARN  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-14 11:09:00.800 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 11:09:01.396 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 11:09:01.774 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-14 11:09:02.309 DEBUG [main] c.f.f.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-14 11:09:02.310 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-07-14 11:09:02.311 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-07-14 11:09:02.312 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-07-14 11:09:02.386 INFO  [main] c.f.f.AuthIntegrationTest - Started AuthIntegrationTest in 7.669 seconds (process running for 8.707)
+2026-07-14 11:09:02.907 DEBUG [main] org.hibernate.SQL - select u1_0.id from usuario u1_0 where u1_0.username=? fetch first ? rows only
+2026-07-14 11:09:03.116 DEBUG [main] org.hibernate.SQL - insert into usuario (email,password,username) values (?,?,?)
+2026-07-14 11:09:03.327 DEBUG [main] org.hibernate.SQL - select u1_0.id from usuario u1_0 where u1_0.username=? fetch first ? rows only
+2026-07-14 11:09:03.584 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 11:09:03.586 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 11:09:04.113 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 11:10:08.010 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-14 11:10:08.052 INFO  [main] c.f.f.AuthIntegrationTest - Starting AuthIntegrationTest using Java 19.0.1 with PID 22440 (started by xblux in C:\Users\xblux\Documents\flashcart-backend\flashcart-backend)
+2026-07-14 11:10:08.053 DEBUG [main] c.f.f.AuthIntegrationTest - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-14 11:10:08.054 INFO  [main] c.f.f.AuthIntegrationTest - The following 1 profile is active: "test"
+2026-07-14 11:10:09.248 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 11:10:09.326 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 4 JPA repository interfaces.
+2026-07-14 11:10:09.881 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-14 11:10:09.956 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-14 11:10:09.993 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-14 11:10:10.297 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 11:10:10.330 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 11:10:11.538 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@e4bb10b
+2026-07-14 11:10:11.539 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 11:10:12.039 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 11:10:12.889 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 11:10:13.284 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 11:10:13.615 INFO  [main] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-14 11:10:13.616 WARN  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-14 11:10:13.672 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 11:10:14.269 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 11:10:14.637 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-14 11:10:15.216 DEBUG [main] c.f.f.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-14 11:10:15.217 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-07-14 11:10:15.217 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-07-14 11:10:15.218 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-07-14 11:10:15.291 INFO  [main] c.f.f.AuthIntegrationTest - Started AuthIntegrationTest in 7.666 seconds (process running for 8.677)
+2026-07-14 11:10:15.825 DEBUG [main] org.hibernate.SQL - select u1_0.id from usuario u1_0 where u1_0.username=? fetch first ? rows only
+2026-07-14 11:10:16.019 DEBUG [main] org.hibernate.SQL - insert into usuario (email,password,username) values (?,?,?)
+2026-07-14 11:10:16.291 DEBUG [main] org.hibernate.SQL - select u1_0.id,u1_0.email,u1_0.password,u1_0.username from usuario u1_0 where u1_0.username=?
+2026-07-14 11:10:16.603 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 11:10:16.605 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 11:10:17.139 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 11:10:40.973 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-14 11:10:41.016 INFO  [main] c.f.f.AuthIntegrationTest - Starting AuthIntegrationTest using Java 19.0.1 with PID 35616 (started by xblux in C:\Users\xblux\Documents\flashcart-backend\flashcart-backend)
+2026-07-14 11:10:41.017 DEBUG [main] c.f.f.AuthIntegrationTest - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-14 11:10:41.018 INFO  [main] c.f.f.AuthIntegrationTest - The following 1 profile is active: "test"
+2026-07-14 11:10:42.207 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 11:10:42.278 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 54 ms. Found 4 JPA repository interfaces.
+2026-07-14 11:10:42.815 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-14 11:10:42.874 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-14 11:10:42.918 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-14 11:10:43.241 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 11:10:43.277 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 11:10:44.311 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@63b0b3dd
+2026-07-14 11:10:44.312 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 11:10:44.814 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 11:10:45.628 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 11:10:46.015 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 11:10:46.367 INFO  [main] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-14 11:10:46.368 WARN  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-14 11:10:46.417 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 11:10:47.020 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 11:10:47.422 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-14 11:10:48.066 DEBUG [main] c.f.f.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-14 11:10:48.067 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-07-14 11:10:48.067 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-07-14 11:10:48.068 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-07-14 11:10:48.150 INFO  [main] c.f.f.AuthIntegrationTest - Started AuthIntegrationTest in 7.565 seconds (process running for 8.59)
+2026-07-14 11:10:48.726 DEBUG [main] org.hibernate.SQL - select u1_0.id from usuario u1_0 where u1_0.username=? fetch first ? rows only
+2026-07-14 11:10:48.922 DEBUG [main] org.hibernate.SQL - insert into usuario (email,password,username) values (?,?,?)
+2026-07-14 11:10:49.208 DEBUG [main] org.hibernate.SQL - select u1_0.id,u1_0.email,u1_0.password,u1_0.username from usuario u1_0 where u1_0.username=?
+2026-07-14 11:10:49.511 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 11:10:49.513 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 11:10:50.036 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 11:11:30.033 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-14 11:11:30.076 INFO  [main] c.f.f.AuthIntegrationTest - Starting AuthIntegrationTest using Java 19.0.1 with PID 38428 (started by xblux in C:\Users\xblux\Documents\flashcart-backend\flashcart-backend)
+2026-07-14 11:11:30.077 DEBUG [main] c.f.f.AuthIntegrationTest - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-14 11:11:30.077 INFO  [main] c.f.f.AuthIntegrationTest - The following 1 profile is active: "test"
+2026-07-14 11:11:31.271 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 11:11:31.351 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 4 JPA repository interfaces.
+2026-07-14 11:11:31.912 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-14 11:11:31.971 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-14 11:11:32.013 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-14 11:11:32.319 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 11:11:32.347 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 11:11:33.550 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@37f71e8
+2026-07-14 11:11:33.551 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 11:11:34.054 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 11:11:34.929 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 11:11:35.325 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 11:11:35.684 INFO  [main] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-14 11:11:35.685 WARN  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-14 11:11:35.746 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 11:11:36.338 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 11:11:36.719 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-14 11:11:37.368 DEBUG [main] c.f.f.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-14 11:11:37.370 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-07-14 11:11:37.370 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-07-14 11:11:37.372 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-07-14 11:11:37.464 INFO  [main] c.f.f.AuthIntegrationTest - Started AuthIntegrationTest in 7.82 seconds (process running for 8.798)
+2026-07-14 11:11:38.013 DEBUG [main] org.hibernate.SQL - select u1_0.id from usuario u1_0 where u1_0.username=? fetch first ? rows only
+2026-07-14 11:11:38.220 DEBUG [main] org.hibernate.SQL - insert into usuario (email,password,username) values (?,?,?)
+2026-07-14 11:11:38.489 DEBUG [main] org.hibernate.SQL - select u1_0.id,u1_0.email,u1_0.password,u1_0.username from usuario u1_0 where u1_0.username=?
+2026-07-14 11:11:38.794 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 11:11:38.796 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 11:11:39.377 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 11:19:01.406 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-14 11:19:01.449 INFO  [main] c.f.f.AuthIntegrationTest - Starting AuthIntegrationTest using Java 19.0.1 with PID 39004 (started by xblux in C:\Users\xblux\Documents\flashcart-backend\flashcart-backend)
+2026-07-14 11:19:01.450 DEBUG [main] c.f.f.AuthIntegrationTest - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-14 11:19:01.450 INFO  [main] c.f.f.AuthIntegrationTest - The following 1 profile is active: "test"
+2026-07-14 11:19:02.668 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 11:19:02.740 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 4 JPA repository interfaces.
+2026-07-14 11:19:03.264 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-14 11:19:03.335 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-14 11:19:03.376 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-14 11:19:03.700 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 11:19:03.728 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 11:19:04.918 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@397dfbe8
+2026-07-14 11:19:04.920 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 11:19:05.420 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 11:19:06.252 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 11:19:06.661 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 11:19:07.019 INFO  [main] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-14 11:19:07.019 WARN  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-14 11:19:07.073 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 11:19:07.663 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 11:19:08.041 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-14 11:19:08.638 DEBUG [main] c.f.f.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-14 11:19:08.639 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-07-14 11:19:08.639 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-07-14 11:19:08.640 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-07-14 11:19:08.726 INFO  [main] c.f.f.AuthIntegrationTest - Started AuthIntegrationTest in 7.728 seconds (process running for 8.754)
+2026-07-14 11:19:09.263 DEBUG [main] org.hibernate.SQL - select u1_0.id from usuario u1_0 where u1_0.username=? fetch first ? rows only
+2026-07-14 11:19:09.464 DEBUG [main] org.hibernate.SQL - insert into usuario (email,password,username) values (?,?,?)
+2026-07-14 11:19:09.732 DEBUG [main] org.hibernate.SQL - select u1_0.id,u1_0.email,u1_0.password,u1_0.username from usuario u1_0 where u1_0.username=?
+2026-07-14 11:19:09.895 DEBUG [main] org.hibernate.SQL - select u1_0.id,u1_0.email,u1_0.password,u1_0.username from usuario u1_0 where u1_0.username=?
+2026-07-14 11:19:10.180 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 11:19:10.182 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 11:19:10.757 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 11:19:27.493 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-14 11:19:27.533 INFO  [main] c.f.f.AuthIntegrationTest - Starting AuthIntegrationTest using Java 19.0.1 with PID 31540 (started by xblux in C:\Users\xblux\Documents\flashcart-backend\flashcart-backend)
+2026-07-14 11:19:27.535 DEBUG [main] c.f.f.AuthIntegrationTest - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-14 11:19:27.536 INFO  [main] c.f.f.AuthIntegrationTest - The following 1 profile is active: "test"
+2026-07-14 11:19:28.749 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 11:19:28.834 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 70 ms. Found 4 JPA repository interfaces.
+2026-07-14 11:19:29.411 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-14 11:19:29.464 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-14 11:19:29.509 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-14 11:19:29.805 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 11:19:29.833 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 11:19:30.895 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@37f71e8
+2026-07-14 11:19:30.897 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 11:19:31.396 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 11:19:32.246 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 11:19:32.643 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 11:19:32.996 INFO  [main] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-14 11:19:32.996 WARN  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-14 11:19:33.057 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 11:19:33.747 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 11:19:34.151 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-14 11:19:34.845 DEBUG [main] c.f.f.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-14 11:19:34.846 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-07-14 11:19:34.846 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-07-14 11:19:34.848 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-07-14 11:19:34.927 INFO  [main] c.f.f.AuthIntegrationTest - Started AuthIntegrationTest in 7.82 seconds (process running for 8.834)
+2026-07-14 11:19:35.480 DEBUG [main] org.hibernate.SQL - select u1_0.id from usuario u1_0 where u1_0.username=? fetch first ? rows only
+2026-07-14 11:19:35.692 DEBUG [main] org.hibernate.SQL - insert into usuario (email,password,username) values (?,?,?)
+2026-07-14 11:19:35.964 DEBUG [main] org.hibernate.SQL - select u1_0.id,u1_0.email,u1_0.password,u1_0.username from usuario u1_0 where u1_0.username=?
+2026-07-14 11:19:36.277 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 11:19:36.279 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 11:19:36.810 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 11:20:01.917 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-14 11:20:01.960 INFO  [main] c.f.f.AuthIntegrationTest - Starting AuthIntegrationTest using Java 19.0.1 with PID 32284 (started by xblux in C:\Users\xblux\Documents\flashcart-backend\flashcart-backend)
+2026-07-14 11:20:01.961 DEBUG [main] c.f.f.AuthIntegrationTest - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-14 11:20:01.961 INFO  [main] c.f.f.AuthIntegrationTest - The following 1 profile is active: "test"
+2026-07-14 11:20:03.162 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 11:20:03.236 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 4 JPA repository interfaces.
+2026-07-14 11:20:03.775 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-14 11:20:03.849 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-14 11:20:03.885 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-14 11:20:04.198 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 11:20:04.233 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 11:20:05.372 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5606d537
+2026-07-14 11:20:05.374 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 11:20:05.874 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 11:20:06.711 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 11:20:07.103 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 11:20:07.526 INFO  [main] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-14 11:20:07.526 WARN  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-14 11:20:07.603 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 11:20:08.210 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 11:20:08.690 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-14 11:20:09.348 DEBUG [main] c.f.f.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-14 11:20:09.349 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-07-14 11:20:09.349 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-07-14 11:20:09.350 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-07-14 11:20:09.435 INFO  [main] c.f.f.AuthIntegrationTest - Started AuthIntegrationTest in 7.905 seconds (process running for 8.938)
+2026-07-14 11:20:09.997 DEBUG [main] org.hibernate.SQL - select u1_0.id from usuario u1_0 where u1_0.username=? fetch first ? rows only
+2026-07-14 11:20:10.191 DEBUG [main] org.hibernate.SQL - insert into usuario (email,password,username) values (?,?,?)
+2026-07-14 11:20:10.389 DEBUG [main] org.hibernate.SQL - select u1_0.id from usuario u1_0 where u1_0.username=? fetch first ? rows only
+2026-07-14 11:20:10.545 DEBUG [main] org.hibernate.SQL - insert into usuario (email,password,username) values (?,?,?)
+2026-07-14 11:20:10.817 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 11:20:10.819 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 11:20:11.337 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 11:20:23.599 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-14 11:20:23.638 INFO  [main] c.f.f.AuthIntegrationTest - Starting AuthIntegrationTest using Java 19.0.1 with PID 30288 (started by xblux in C:\Users\xblux\Documents\flashcart-backend\flashcart-backend)
+2026-07-14 11:20:23.639 DEBUG [main] c.f.f.AuthIntegrationTest - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-14 11:20:23.640 INFO  [main] c.f.f.AuthIntegrationTest - The following 1 profile is active: "test"
+2026-07-14 11:20:24.831 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 11:20:24.907 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66 ms. Found 4 JPA repository interfaces.
+2026-07-14 11:20:25.458 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-14 11:20:25.519 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-14 11:20:25.559 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-14 11:20:25.864 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 11:20:25.906 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 11:20:26.967 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@78e50fca
+2026-07-14 11:20:26.968 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 11:20:27.472 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 11:20:28.295 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 11:20:28.683 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 11:20:29.036 INFO  [main] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-14 11:20:29.037 WARN  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-14 11:20:29.095 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 11:20:29.691 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 11:20:30.074 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-14 11:20:30.679 DEBUG [main] c.f.f.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-14 11:20:30.680 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-07-14 11:20:30.680 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-07-14 11:20:30.682 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2026-07-14 11:20:30.767 INFO  [main] c.f.f.AuthIntegrationTest - Started AuthIntegrationTest in 7.562 seconds (process running for 8.595)
+2026-07-14 11:20:31.308 DEBUG [main] org.hibernate.SQL - select u1_0.id from usuario u1_0 where u1_0.username=? fetch first ? rows only
+2026-07-14 11:20:31.498 DEBUG [main] org.hibernate.SQL - insert into usuario (email,password,username) values (?,?,?)
+2026-07-14 11:20:31.697 DEBUG [main] org.hibernate.SQL - select u1_0.id from usuario u1_0 where u1_0.username=? fetch first ? rows only
+2026-07-14 11:20:31.952 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 11:20:31.954 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 11:20:32.407 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 11:21:11.738 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-14 11:21:11.780 INFO  [main] c.f.f.AuthIntegrationTest - Starting AuthIntegrationTest using Java 19.0.1 with PID 36172 (started by xblux in C:\Users\xblux\Documents\flashcart-backend\flashcart-backend)
+2026-07-14 11:21:11.782 DEBUG [main] c.f.f.AuthIntegrationTest - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-14 11:21:11.783 INFO  [main] c.f.f.AuthIntegrationTest - The following 1 profile is active: "test"
+2026-07-14 11:21:12.983 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 11:21:13.062 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 4 JPA repository interfaces.
+2026-07-14 11:21:13.628 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-14 11:21:13.685 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-14 11:21:13.742 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-14 11:21:14.044 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 11:21:14.074 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 11:21:15.234 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27682fa9
+2026-07-14 11:21:15.235 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 11:21:15.739 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 11:21:16.616 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 11:21:17.010 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 11:21:17.355 INFO  [main] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-14 11:21:17.355 WARN  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-14 11:21:17.415 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 11:21:18.026 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 11:21:18.403 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-14 11:21:19.018 DEBUG [main] c.f.f.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-14 11:21:19.019 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-07-14 11:21:19.019 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-07-14 11:21:19.020 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-07-14 11:21:19.105 INFO  [main] c.f.f.AuthIntegrationTest - Started AuthIntegrationTest in 7.767 seconds (process running for 8.787)
+2026-07-14 11:21:19.682 DEBUG [main] org.hibernate.SQL - select u1_0.id from usuario u1_0 where u1_0.username=? fetch first ? rows only
+2026-07-14 11:21:19.882 DEBUG [main] org.hibernate.SQL - insert into usuario (email,password,username) values (?,?,?)
+2026-07-14 11:21:20.154 DEBUG [main] org.hibernate.SQL - select u1_0.id,u1_0.email,u1_0.password,u1_0.username from usuario u1_0 where u1_0.username=?
+2026-07-14 11:21:20.454 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 11:21:20.457 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 11:21:21.135 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 11:26:11.629 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-14 11:26:11.670 INFO  [main] c.f.f.AuthIntegrationTest - Starting AuthIntegrationTest using Java 19.0.1 with PID 22744 (started by xblux in C:\Users\xblux\Documents\flashcart-backend\flashcart-backend)
+2026-07-14 11:26:11.671 DEBUG [main] c.f.f.AuthIntegrationTest - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-14 11:26:11.672 INFO  [main] c.f.f.AuthIntegrationTest - The following 1 profile is active: "test"
+2026-07-14 11:26:12.884 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 11:26:12.958 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64 ms. Found 4 JPA repository interfaces.
+2026-07-14 11:26:13.486 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-14 11:26:13.547 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-14 11:26:13.587 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-14 11:26:13.894 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 11:26:13.925 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 11:26:15.116 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@78e50fca
+2026-07-14 11:26:15.117 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 11:26:15.627 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 11:26:16.474 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 11:26:16.874 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 11:26:17.266 INFO  [main] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-14 11:26:17.266 WARN  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-14 11:26:17.323 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 11:26:17.912 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 11:26:18.322 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-14 11:26:18.878 DEBUG [main] c.f.f.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-14 11:26:18.879 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-07-14 11:26:18.879 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-07-14 11:26:18.880 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-07-14 11:26:18.960 INFO  [main] c.f.f.AuthIntegrationTest - Started AuthIntegrationTest in 7.719 seconds (process running for 8.733)
+2026-07-14 11:26:19.506 DEBUG [main] org.hibernate.SQL - select u1_0.id from usuario u1_0 where u1_0.username=? fetch first ? rows only
+2026-07-14 11:26:19.709 DEBUG [main] org.hibernate.SQL - insert into usuario (email,password,username) values (?,?,?)
+2026-07-14 11:26:19.978 DEBUG [main] org.hibernate.SQL - select u1_0.id,u1_0.email,u1_0.password,u1_0.username from usuario u1_0 where u1_0.username=?
+2026-07-14 11:26:20.313 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 11:26:20.315 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 11:26:20.760 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 11:28:38.259 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-14 11:28:38.299 INFO  [main] c.f.f.AuthIntegrationTest - Starting AuthIntegrationTest using Java 19.0.1 with PID 23124 (started by xblux in C:\Users\xblux\Documents\flashcart-backend\flashcart-backend)
+2026-07-14 11:28:38.300 DEBUG [main] c.f.f.AuthIntegrationTest - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-14 11:28:38.301 INFO  [main] c.f.f.AuthIntegrationTest - The following 1 profile is active: "test"
+2026-07-14 11:28:39.517 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 11:28:39.589 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 4 JPA repository interfaces.
+2026-07-14 11:28:40.131 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-14 11:28:40.211 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-14 11:28:40.248 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-14 11:28:40.547 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 11:28:40.576 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 11:28:41.731 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@37f71e8
+2026-07-14 11:28:41.732 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 11:28:42.229 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 11:28:43.056 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 11:28:43.452 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 11:28:43.800 INFO  [main] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-14 11:28:43.800 WARN  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-14 11:28:43.855 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 11:28:44.463 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 11:28:44.835 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-14 11:28:45.460 DEBUG [main] c.f.f.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-14 11:28:45.461 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-07-14 11:28:45.462 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-07-14 11:28:45.463 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-07-14 11:28:45.546 INFO  [main] c.f.f.AuthIntegrationTest - Started AuthIntegrationTest in 7.696 seconds (process running for 8.718)
+2026-07-14 11:28:46.119 DEBUG [main] org.hibernate.SQL - select u1_0.id from usuario u1_0 where u1_0.username=? fetch first ? rows only
+2026-07-14 11:28:46.337 DEBUG [main] org.hibernate.SQL - insert into usuario (email,password,username) values (?,?,?)
+2026-07-14 11:28:46.608 DEBUG [main] org.hibernate.SQL - select u1_0.id,u1_0.email,u1_0.password,u1_0.username from usuario u1_0 where u1_0.username=?
+2026-07-14 11:28:46.909 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 11:28:46.911 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 11:28:47.360 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 11:30:41.156 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-07-14 11:30:41.200 INFO  [main] c.f.f.AuthIntegrationTest - Starting AuthIntegrationTest using Java 19.0.1 with PID 40268 (started by xblux in C:\Users\xblux\Documents\flashcart-backend\flashcart-backend)
+2026-07-14 11:30:41.201 DEBUG [main] c.f.f.AuthIntegrationTest - Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-14 11:30:41.202 INFO  [main] c.f.f.AuthIntegrationTest - The following 1 profile is active: "test"
+2026-07-14 11:30:42.397 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 11:30:42.474 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 4 JPA repository interfaces.
+2026-07-14 11:30:42.985 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-14 11:30:43.049 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-07-14 11:30:43.085 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-14 11:30:43.381 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 11:30:43.406 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 11:30:44.561 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@71eaef6a
+2026-07-14 11:30:44.562 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 11:30:45.042 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 11:30:45.892 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 11:30:46.272 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 11:30:46.622 INFO  [main] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-14 11:30:46.622 WARN  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-14 11:30:46.670 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 11:30:47.246 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 11:30:47.632 INFO  [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-07-14 11:30:48.185 DEBUG [main] c.f.f.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-07-14 11:30:48.186 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-07-14 11:30:48.186 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-07-14 11:30:48.187 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-07-14 11:30:48.261 INFO  [main] c.f.f.AuthIntegrationTest - Started AuthIntegrationTest in 7.497 seconds (process running for 8.521)
+2026-07-14 11:30:48.826 DEBUG [main] org.hibernate.SQL - select u1_0.id from usuario u1_0 where u1_0.username=? fetch first ? rows only
+2026-07-14 11:30:49.018 DEBUG [main] org.hibernate.SQL - insert into usuario (email,password,username) values (?,?,?)
+2026-07-14 11:30:49.287 DEBUG [main] org.hibernate.SQL - select u1_0.id,u1_0.email,u1_0.password,u1_0.username from usuario u1_0 where u1_0.username=?
+2026-07-14 11:30:49.607 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 11:30:49.609 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 11:30:50.051 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

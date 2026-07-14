@@ -3,6 +3,7 @@ package com.flashcart.flashcart_backend.Controllers;
 import com.flashcart.flashcart_backend.DTOS.AuthRequest;
 import com.flashcart.flashcart_backend.DTOS.AuthResponse;
 import com.flashcart.flashcart_backend.DTOS.RegisterRequest;
+import com.flashcart.flashcart_backend.exceptions.UsuarioExistenteException;
 import com.flashcart.flashcart_backend.models.Usuario;
 import com.flashcart.flashcart_backend.repositories.UsuarioRepository;
 import com.flashcart.flashcart_backend.security.JwtService;
@@ -58,6 +59,7 @@ public class AuthController {
 
         //UserDetails user = usuarioRepository.findByUsername(request.getUsername()).orElseThrow();
         //String token = jwtService.generateToken(user);
+        System.out.println("AUTENTICACIÓN EXITOSA");
         Usuario user = usuarioRepository.findByUsername(request.getUsername())
                 .orElseThrow();
 
@@ -87,7 +89,7 @@ public class AuthController {
     @PostMapping("/register")
     public ResponseEntity<AuthResponse> register(@RequestBody RegisterRequest request) {
         if (usuarioRepository.existsByUsername(request.getUsername())) {
-            throw new RuntimeException("El usuario ya existe");
+            throw new UsuarioExistenteException("El usuario ya existe");
         }
 
         Usuario usuario = new Usuario();
