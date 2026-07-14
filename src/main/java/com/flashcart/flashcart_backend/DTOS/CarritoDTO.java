@@ -8,10 +8,7 @@ import java.math.BigDecimal;
 import java.util.List;
 
 public class CarritoDTO {
-    @Schema(
-            description = "Identificador del carrito",
-            example = "1"
-    )
+
     private Long id;
     @Schema(
             description = "Identificador del usuario",

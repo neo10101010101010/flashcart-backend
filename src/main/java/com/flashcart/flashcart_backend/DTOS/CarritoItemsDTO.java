@@ -8,10 +8,6 @@ import java.math.BigDecimal;
 import java.util.UUID;
 
 public class CarritoItemsDTO {
-    @Schema(
-            description = "Identificador del item del carrito",
-            example = "1"
-    )
     private Long id;
     @Schema(
             description = "ID del carrito",

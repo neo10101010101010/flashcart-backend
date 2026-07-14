@@ -1,9 +1,23 @@
 package com.flashcart.flashcart_backend.DTOS;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
 public class RegisterRequest {
     private Long id;
+    @Schema(
+            description = "username del usuario",
+            example = "neo"
+    )
     private String username;
+    @Schema(
+            description = "correo electronico del usuario",
+            example = "neo@correo.com"
+    )
     private String email;
+    @Schema(
+            description = "contraseña del usuario",
+            example = "Contr@señ@1"
+    )
     private String password;
 
     public Long getId() {

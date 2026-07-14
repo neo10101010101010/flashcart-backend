@@ -1,8 +1,10 @@
 server:
   port: ${PORT:8090}
+
 jwt:
   secret: ${JWT_SECRET}
   expiration: ${JWT_EXPIRATION:86400000}
+
 spring:
   application:
     name: flashcart-backend
@@ -16,8 +18,8 @@ spring:
     hibernate:
       ddl-auto: validate
 
-  management:
-    endpoints:
-      web:
-        exposure:
-          include: health
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health

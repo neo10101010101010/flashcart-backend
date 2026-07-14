@@ -6,6 +6,10 @@ import com.flashcart.flashcart_backend.DTOS.RegisterRequest;
 import com.flashcart.flashcart_backend.models.Usuario;
 import com.flashcart.flashcart_backend.repositories.UsuarioRepository;
 import com.flashcart.flashcart_backend.security.JwtService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -13,6 +17,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
+@Tag(name = "Usuario", description = "Operaciones relacionadas con los usuarios ")
 @CrossOrigin(origins = "http://localhost:5173")
 @RestController
 @RequestMapping("/api/auth")
@@ -30,6 +35,20 @@ public class AuthController {
         this.jwtService = jwtService;
     }
 
+    @Operation(
+            summary = "Logueo de usuarios",
+            description = "agrega credenciales de usuarios para iniciar sesion"
+    )
+    @ApiResponses(value = {
+            @ApiResponse(
+                    responseCode = "200",
+                    description = "inicio de sesion exitosa"
+            ),
+            @ApiResponse(
+                    responseCode = "500",
+                    description = "Error interno del servidor"
+            )
+    })
     @PostMapping("/login")
     public ResponseEntity<AuthResponse> login(@RequestBody AuthRequest request) {
         System.out.println("ENTRO AL LOGIN");
@@ -51,6 +70,20 @@ public class AuthController {
                 .build());
     }
 
+    @Operation(
+            summary = "Registro de usuarios",
+            description = "agrega datos de usuario para su registro"
+    )
+    @ApiResponses(value = {
+            @ApiResponse(
+                    responseCode = "200",
+                    description = "Registro de usuario exitoso"
+            ),
+            @ApiResponse(
+                    responseCode = "500",
+                    description = "Error interno del servidor"
+            )
+    })
     @PostMapping("/register")
     public ResponseEntity<AuthResponse> register(@RequestBody RegisterRequest request) {
         if (usuarioRepository.existsByUsername(request.getUsername())) {

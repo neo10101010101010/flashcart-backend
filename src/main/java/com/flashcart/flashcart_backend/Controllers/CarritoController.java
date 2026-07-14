@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
 
-@Tag(name = "Productos", description = "Operaciones relacionadas con productos")
+@Tag(name = "Carrito", description = "Operaciones relacionadas con carrito")
 @CrossOrigin(origins = "http://localhost:5173")
 @RestController
 @RequestMapping("/api/carrito")
