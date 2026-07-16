@@ -294,18 +294,18 @@ El pipeline ejecuta automáticamente:
 
 ---
 
-# Documentacion Swagger
+# Swagger
 
 Swagger UI
 
 ```
-https://flashcart-backend-lbkd.onrender.com/swagger-ui/index.html#/Usuario/login
+http://localhost:8080/swagger-ui/index.html
 ```
 
-# Link de proyecto FlashCart 
+OpenAPI
 
 ```
-https://flashcart-frontend-two.vercel.app/
+http://localhost:8080/v3/api-docs
 ```
 
 ---
