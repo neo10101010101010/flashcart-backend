@@ -1,6 +1,7 @@
 package com.flashcart.flashcart_backend.DTOS;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotBlank;
 
 public class RegisterRequest {
     @Schema(hidden = true)
@@ -9,6 +10,7 @@ public class RegisterRequest {
             description = "username del usuario",
             example = "neo"
     )
+    @NotBlank(message = "Username es obligatorio")
     private String username;
     @Schema(
             description = "correo electronico del usuario",
@@ -19,6 +21,7 @@ public class RegisterRequest {
             description = "contraseña del usuario",
             example = "Contr@señ@1"
     )
+    @NotBlank(message = "contraseña es obligatorio")
     private String password;
 
     public Long getId() {

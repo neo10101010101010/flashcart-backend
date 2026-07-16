@@ -1,6 +1,8 @@
 package com.flashcart.flashcart_backend.DTOS;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 import java.math.BigDecimal;
 import java.util.UUID;
@@ -15,6 +17,7 @@ public class ProductosDTO {
             description = "Nombre del producto",
             example = "Laptop Lenovo"
     )
+    @NotBlank(message = "El nombre del producto es obligatorio")
     private String nombre;
     @Schema(
             description = "Descripción del producto",
@@ -25,11 +28,13 @@ public class ProductosDTO {
             description = "Precio del producto",
             example = "15999.99"
     )
+    @NotNull(message = "El precio del producto es obligatorio")
     private BigDecimal precio;
     @Schema(
             description = "Cantidad disponible en inventario",
             example = "25"
     )
+    @NotNull(message = "El stock del producto es obligatorio")
     private Integer stock;
 
     public ProductosDTO() {
