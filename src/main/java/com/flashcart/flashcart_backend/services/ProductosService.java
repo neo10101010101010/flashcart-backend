@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
@@ -92,12 +93,22 @@ public class ProductosService {
             existente.setStock(datosActualizados.getStock());
         }
         if(datosActualizados.getNombre() != null){
+            if (datosActualizados.getNombre().isBlank()) {
+                throw new IllegalArgumentException(
+                        "El nombre del producto no puede estar vacío");
+            }
+
             existente.setNombre(datosActualizados.getNombre());
         }
         if(datosActualizados.getDescripcion() != null){
             existente.setDescripcion(datosActualizados.getDescripcion());
         }
         if(datosActualizados.getPrecio() != null){
+            if (datosActualizados.getPrecio().compareTo(BigDecimal.ZERO) <= 0) {
+                throw new IllegalArgumentException(
+                        "El precio debe ser mayor a cero");
+            }
+
             existente.setPrecio(datosActualizados.getPrecio());
         }
 
